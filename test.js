@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', function(){
 
-	fetch('./test.txt') // (1) リクエスト送信
+	fetch('test.txt') // (1) リクエスト送信
 	.then(response => response.text()) // (2) レスポンスデータを取得
 	.then(data => { // (3)レスポンスデータを処理
 
