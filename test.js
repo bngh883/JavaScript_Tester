@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', function(){
 	.then(response => response.text())
 	.then(data =>{
 		//let lines = data.split('\n');
-		const txt_area = document.getElementById('txt_area');
-		txt_area.innerHTML = data.replace(/\n/g, "<br>");
+		let csv_area = document.getElementById('csv_area');
+		csv_area.innerHTML = data.replace(/\n/g, "<br>");
 	})
 });
