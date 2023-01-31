@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', function(){
 		let lines = data.split('\n');
 		for (let i = 0; i < lines.length; i++) {
 			let cells = lines[i].split(',');
-			str = str + cells[0];
+			str = str + cells[2];
 		}
 		let csv_area = document.getElementById('csv_area');
 		csv_area.innerHTML = str;
