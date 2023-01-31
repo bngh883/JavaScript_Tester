@@ -12,8 +12,13 @@ window.addEventListener('DOMContentLoaded', function(){
 	fetch('./FileBox/test.csv')
 	.then(response => response.text())
 	.then(data =>{
-		//let lines = data.split('\n');
+		let str = "";
+		let lines = data.split('\n');
+		for (let i = 0; i < lines.length; i++) {
+			let cells = lines[i].split(',');
+			str = str + cells[0];
+		}
 		let csv_area = document.getElementById('csv_area');
-		csv_area.innerHTML = data.replace(/\n/g, "<br>");
+		csv_area.innerHTML = str;
 	})
 });
