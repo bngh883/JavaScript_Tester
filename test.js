@@ -17,6 +17,7 @@ export default function MyApp() {
   );
 }
 
+/*
 window.addEventListener('DOMContentLoaded', function(){
 
 	fetch('./FileBox/test.txt') // (1) リクエスト送信
@@ -41,3 +42,4 @@ window.addEventListener('DOMContentLoaded', function(){
 		csv_area.innerHTML = str;
 	})
 });
+*/
