@@ -1,3 +1,22 @@
+import React from 'react';
+
+function MyButton() {
+	return (
+	  <button>
+		I'm a button
+	  </button>
+	);
+  }
+  
+  export default function MyApp() {
+	return (
+	  <div>
+		<h1>Welcome to my app</h1>
+		<MyButton />
+	  </div>
+	);
+  }
+
 window.addEventListener('DOMContentLoaded', function(){
 
 	fetch('./FileBox/test.txt') // (1) リクエスト送信
